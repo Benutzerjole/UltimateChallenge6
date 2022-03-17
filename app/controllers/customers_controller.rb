@@ -5,4 +5,10 @@ class CustomersController < ApplicationController
 
   end
 
+  def alphabetized
+
+    @customers = Customer.all.order(:name)
+
+  end
+
 end
