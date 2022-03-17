@@ -11,4 +11,10 @@ class CustomersController < ApplicationController
 
   end
 
+  def missing_email
+
+    @customers = Customer.where(email: "")
+
+  end
+
 end

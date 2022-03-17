@@ -1,0 +1,9 @@
+<h1 class="p-0 mt-5 text-center">Customers without an Email</h1>
+
+<div class="row">
+  <div class="d-flex flex-wrap p-0" style="list-style: none;">
+    <% @customers.each do |customer| %>
+      <%= render partial: "shared/customer", locals: {customer: customer} %>
+    <% end %>
+  </div>    
+</div>
