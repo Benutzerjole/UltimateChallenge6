@@ -1,0 +1,9 @@
+<div class="card my-4 mr-4" style="width: 16rem; font-size: 15px;">
+  <h3 class="p-3"><%= customer.name %></h3>
+  <%= image_tag(customer.image, alt: customer.name, class: "card-img-top", style: "height: 16rem;" ) %>
+  <div class="card-body my-4">
+    <p class="card-text"><strong>Notes: </strong><%= customer.notes %></p>
+    <p class="card-text"><strong>Phone: </strong><%= customer.phone %></p>
+    <p class="card-text"><strong>Email: </strong><%= customer.email %></p>
+  </div>
+</div>
